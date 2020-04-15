@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BROCKHAMPTON™ GROUP</title>
+    <link rel="icon" type="image" href="logobar.jpg">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="css/global.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+
+<body>
+
+    <div class="wrap">
+        <div class="search">
+            <input type="text" class="searchTerm" placeholder="What are you looking for?">
+            <button type="submit" class="searchButton">
+                <i class ="fa fa-search" style="position: relative;padding: 0%;margin: 0%;"></i>
+            </button>
+        </div>
+    </div>
+    <nav class="navweb">
+        <a class="logonav" href="#index1" onclick="home(this.innerHTML)" style="padding-top: none;"><img src="logo.png"></a>
+    </nav>
+    <div id="navbar">
+        <nav class="navweb1">
+            <a class="logonav1" href="#index1" onclick="home(this.innerHTML)" style="padding-top: 5vh;"><img src="logo.png"></a>
+            <a href="shop.html"><b>MERCH</b></a>
+            <a href="#news"><b>CONCERT</b></a>
+            <a href="joinus.html"><b>JOIN US!</b></a>
+        </nav>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="shop.html">MERCH</a>
+        <a href="#">CONCERT</a>
+        <a href="joinus.html">JOIN US</a>
+
+    </div>
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#index1" onclick="newswire(this.innerHTML)">Newswire</a>
+        <a href="#index1" onclick="albums(this.innerHTML)">Albums</a>
+        <a href="#index1" onclick="members(this.innerHTML)">Members</a>
+        <a href="#index1" onclick="about(this.innerHTML)">About</a>
+    </div>
+
+    <span onclick="openNav()">&#9776;<a class="logonav2" href="#index1" onclick="home(this.innerHTML)"><img src="logo.png"></a>
+        </span>
+
+    <div class="container" id="container">
+        <div class="index1" id="index1">
+            <div class="maincontainer" id="maincontainer">
+            </div>
+        </div>
+        <div class="content" id="content">
+        </div>
+        <div class="containerbawah" id="containerbawah">
+            <div class="index2" id="index2">
+            </div>
+            <div class="index3" id="index3">
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <div class="video">
+        <iframe width="1000" height="500" autoplay="1" src="https://www.youtube.com/embed/snPAVoPPcYk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+    </div>
+
+    <a href="members.html" class="button">Know More</a>
+    
+<div class="containeralbum">
+    <div class="wrapper">
+
+        <div class="item">
+          <div class="polaroid"><img src="isialbum/ginger.jpg">
+            <div class="caption">GINGER</div>
+          </div>
+        </div>
+      
+        <div class="item">
+          <div class="polaroid"><img src="isialbum/iridescence.jpg">
+            <div class="caption">IRISDENCE</div>
+          </div>
+        </div>
+      
+        <div class="item">
+          <div class="polaroid"><img src="isialbum/saturation 3.png">
+            <div class="caption">SATURATION III</div>
+          </div>
+        </div>
+      
+        <div class="item">
+          <div class="polaroid"><img src="isialbum/saturation2.png">
+            <div class="caption">SATURATION II</div>
+          </div>
+        </div>
+        
+        <div class="item">
+          <div class="polaroid"><img src="isialbum/saturation.png">
+            <div class="caption">SATURATION</div>
+          </div>
+        </div>
+      
+      </div>
+</div>
+
+<div class="sosmed">
+    <a href="https://www.facebook.com/brckhmptn/" class="fa fa-facebook"></a>
+    <a href="https://twitter.com/brckhmptn" class="fa fa-twitter"></a>
+    <a href="https://www.instagram.com/brckhmptn/?hl=id" class="fa fa-instagram"></a>
+    <a href="https://www.youtube.com/channel/UCFLnwFhuJeBSCjIJewxSqKw" class="fa fa-youtube"></a>
+</div>
+
+    <div class="footer" id="footer">
+        <div class="bawah">
+            <div class="kiria">
+                <h4> About Us </h4>
+                <div class="wording">
+                    <h5> Brockhampton (stylized in all caps) is an American alternative hip hop band founded as AliveSinceForever in San Marcos, Texas in 2010. In 2014, the band rebranded as Brockhampton. Led by Kevin Abstract and formed partially through the online forum "KanyeToThe", Brockhampton is a self-described boy band, effort to redefine the term.</h5>
+                </div>
+            </div>
+
+            <div class="tengah">
+                <h4> Albums</h4>
+                <div class="wording">
+                    <h5> <ul>TEST</ul>
+                    </h5>
+                </div>
+            </div>
+
+            <div class="isibawah">
+                <h4> Social Media </h4>
+                <div class="wording">
+                    <h5> Get Closed<br></h5>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-200px";
+            }
+        }
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "200px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+        var bg = "url('./image/home.jpg')";
+        var head = 'BROCKHAMPTON';
+        var subtitle = 'all about brockhampton';
+        var text = '<br> Logan has been living a desolate life following the death of Jean Grey at his hands. A Japanese girl goes to see him, and tells him that a man he knew in World War II, and saved his life, is now dying and wants to see him.';
+        var clear = 'none';
+        var discover = '<a href="#isihome" class="discover">Get Started</a>';
+
+        var isihome =
+            '<div class="isihome" id="isihome"><div class="maincontainer1"><div class="kiri"><div class="judulhome">About BROCKHAMPTON</div><div class="taglinehome">Brockhampton (stylized in all caps) is an American alternative hip hop band founded as AliveSinceForever in San Marcos, Texas in 2010. In 2014, the band rebranded as Brockhampton. Led by Kevin Abstract and formed partially through the online forum "KanyeToThe", Brockhampton is a self-described boy band, effort to redefine the term.</div></div><div class="kanan"></div></div></div><div class="isihome"><div class="maincontainer2"><div class="kanan1"><div class="boxfilm2" id="film1"><div class="members" id="members5"></div><div class="namapilihan" id="namapilihan5">DOM</div></div><div class="boxfilm2" id="film2"><div class="members" id="members6"></div><div class="namapilihan" id="namapilihan6">MERLYN</div></div><div class="boxfilm2" id="film3"><div class="members" id="members7"></div><div class="namapilihan" id="namapilihan7">TEST</div></div><div class="boxfilm2" id="film4"><div class="members" id="members8"></div><div class="namapilihan" id="namapilihan8">TEST</div></div><div class="boxfilm2" id="film5"><div class="members" id="members9"></div><div class="namapilihan" id="namapilihan9">TEST</div></div><div class="boxfilm2" id="film6"><div class="members" id="members10"></div><div class="namapilihan" id="namapilihan10">TEST</div></div></div><div class="kiri"><div class="judulhome1">members</div><div class="taglinehome1">Current members of BROCKHAMPTON</div></div></div></div><div class="isihome" id="isihome"><div class="maincontainer1"><div class="kiri"><div class="judulhome2">albums</div><div class="taglinehome2">Albums all the year</div></div><div class="kanan"></div></div></div></div>';
+        var footer =
+            '<div class="footer" id="footerhome"><div class="bawah"><div class="kiria"><h4> About BROCKHAMPTON </h4><div class="wording"><h5> Brockhampton (stylized in all caps) is an American alternative hip hop band founded as AliveSinceForever in San Marcos, Texas in 2010</h5></div></div><div class="tengah"><h4> Members</h4><div class="wording"><h5> <ul>Kevin</ul><ul>Joba</ul><ul>Matt</ul><ul>Dom</ul><ul>Merlyn</ul><ul>Bearface</ul></h5></div></div><div class="isibawah"><h4> Get Closed </h4><div class="wording"><h5> Learn more</h5></div></div></div></div>';
+
+        var lempar = '<h2>' + head + '</h2><h1>' + subtitle + '</h1><p>' + text + '</p>' + discover;
+        document.body.style.backgroundColor = "black";
+        document.getElementById('content').innerHTML = discover;
+        document.getElementById('maincontainer').style.backgroundImage = "url('./image/home-2.jpg')";
+        document.getElementById('maincontainer').style.backgroundSize = "cover";
+        document.getElementById('maincontainer').style.backgroundPosition = "center";
+        document.getElementById('maincontainer').style.backgroundRepeat = "no-repeat";
+        document.getElementById('index2').style.backgroundColor = "none";
+        document.getElementById('index2').innerHTML = isihome + footer;
+        document.getElementById('index3').style.display = "none";
+        document.getElementById('footer').style.display = "none";
+
+                document.getElementById('members5').style.backgroundImage = "url('./isimember/kevin.jpg')";
+                document.getElementById('members5').style.backgroundSize = "cover";
+                document.getElementById('members5').style.backgroundRepeat = "no-repeat";
+                document.getElementById('namapilihan5').innerHTML = "KEVIN";
+                
+                document.getElementById('members6').style.backgroundImage = "url('./isimember/joba.jpg')";
+                document.getElementById('members6').style.backgroundSize = "cover";
+                document.getElementById('members6').style.backgroundRepeat = "no-repeat";
+                document.getElementById('namapilihan6').innerHTML = "JOBA";
+                
+                document.getElementById('members7').style.backgroundImage = "url('./isimember/matt.jpg')";
+                document.getElementById('members7').style.backgroundSize = "cover";
+                document.getElementById('members7').style.backgroundRepeat = "no-repeat";
+                document.getElementById('namapilihan7').innerHTML = "MATT";
+
+                document.getElementById('members8').style.backgroundImage = "url('./isimember/dom.jpg')";
+                document.getElementById('members8').style.backgroundSize = "cover";
+                document.getElementById('members8').style.backgroundRepeat = "no-repeat";
+                document.getElementById('namapilihan8').innerHTML = "DOM";
+
+                document.getElementById('members9').style.backgroundImage = "url('./isimember/merlyn.jpg')";
+                document.getElementById('members9').style.backgroundSize = "cover";
+                document.getElementById('members9').style.backgroundRepeat = "no-repeat";
+                document.getElementById('namapilihan9').innerHTML = "MERLYN";
+
+                document.getElementById('members10').style.backgroundImage = "url('./isimember/bearface.jpg')";
+                document.getElementById('members10').style.backgroundSize = "cover";
+                document.getElementById('members10').style.backgroundRepeat = "no-repeat";
+                document.getElementById('namapilihan10').innerHTML = "BEARFACE";
+
+    </script>
+
+</body>
+
+</html>

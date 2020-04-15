@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>SHOP | BROCKHAMPTON™ GROUP</title>
+  <link rel="icon" type="image" href="logobar.jpg">
+  <link rel="stylesheet" href="css/style2.css" />
+</head>
+
+<body>
+<a class="logonav" href="#index1" onclick="home(this.innerHTML)" style="position: absolute; padding-top: none;"><img src="logo.png"></a>
+  <div class="triangle-down"></div>
+  <div id="navbar">
+    <nav class="navweb1">
+        <a class="logonav1" href="index.html" onclick="home(this.innerHTML)" style="padding-top: 5vh;" ><img src="logo.png"></a>
+        <a href="shop.html"><b>MERCH</b></a>
+        <a href="#news"><b>CONCERT</b></a>
+        <a href="joinus.html"><b>JOIN US!</b></a>
+    </nav>
+</div>
+
+
+  <div class="container-atas">
+    <div class="member">SHOP</div>
+      <div class="image">
+        <img src="image/image.jpg" alt="Trulli" width="1300" height="800" style="box-shadow: 10px 10px 20px rgb(17, 17, 17);">
+    </div>
+  </div>
+
+
+  <a href="index.html" class="button">Back to Home</a>
+
+  <div class="quantity">
+    <input type="number" min="1" max="9" step="1" value="1">
+  </div>
+
+  <div class="container">
+
+    <a href="#" class="button1">BUY NOW</a>
+    <a href="#" class="button2">ADD TO CART</a>
+
+    <div class="member-description">
+      <div class="description-container animated slideInLeft">
+        <div class="description-wrapper">
+          <img src="isishop/jaketbiru.jpg" alt="img" />
+          <div class="description-text">
+          </div>
+        </div>
+        <div class="nama-text">Blue SATURATION Jacket.
+          <h5>35$</h5>
+          <h6>SCREENPRINTED FRONT + BACK GRAPHICS</h6>
+          <p>100% COTTON</p>
+          <p>SHIPS IN 2-3 WEEKS</p>
+
+          
+        </div>
+
+      </div>
+      <div class="description-container animated slideInLeft hide">
+        <div class="description-wrapper">
+          <img src="isishop/putih.jpg" alt="img" />
+          <div class="description-text">
+          </div>
+        </div>
+        <div class="nama-text">GINGER White T-Shirt
+          <h5>25$</h5>
+          <h6>SCREENPRINTED FRONT + BACK GRAPHICS</h6>
+          <p>100% COTTON</p>
+          <p>SHIPS IN 2-3 WEEKS</p>
+          </div>
+      </div>
+      <div class="description-container animated slideInLeft hide">
+        <div class="description-wrapper">
+          <img src="isishop/pink.png" alt="img" />
+          <div class="description-text">
+          </div>
+        </div>
+        <div class="nama-text">
+            Pink MILK T-Shirt
+            <h5>25$</h5>
+            <h6>SCREENPRINTED FRONT + BACK GRAPHICS</h6>
+            <p>100% COTTON</p>
+            <p>SHIPS IN 2-3 WEEKS</p>
+          </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="grid-container">
+      <div class="item1 member-button animated slideInRight active-member">
+        <img src="isishop/jaketbiru.jpg" class="trigger-img" alt="img" />
+      </div>
+
+      <div class="item2 member-button animated slow slideInRight">
+        <img src="isishop/putih.jpg" class="trigger-img" alt="img" />
+      </div>
+      <div class="item3 member-button animated slower slideInRight">
+        <img src="isishop/pink.png" class="trigger-img" alt="img" />
+      </div>
+    </div>
+  </div>
+
+
+  <script
+          src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous"></script>
+  <script src="js/tilt.jquery.js"></script>
+  <script src="js/script.js"></script>
+<script>
+  jQuery('<div class="quantity-nav"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div></div>').insertAfter('.quantity input');
+    jQuery('.quantity').each(function() {
+      var spinner = jQuery(this),
+        input = spinner.find('input[type="number"]'),
+        btnUp = spinner.find('.quantity-up'),
+        btnDown = spinner.find('.quantity-down'),
+        min = input.attr('min'),
+        max = input.attr('max');
+
+      btnUp.click(function() {
+        var oldValue = parseFloat(input.val());
+        if (oldValue >= max) {
+          var newVal = oldValue;
+        } else {
+          var newVal = oldValue + 1;
+        }
+        spinner.find("input").val(newVal);
+        spinner.find("input").trigger("change");
+      });
+
+      btnDown.click(function() {
+        var oldValue = parseFloat(input.val());
+        if (oldValue <= min) {
+          var newVal = oldValue;
+        } else {
+          var newVal = oldValue - 1;
+        }
+        spinner.find("input").val(newVal);
+        spinner.find("input").trigger("change");
+      });
+
+    });
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-200px";
+            }
+        }
+  </script>
+</body>
+
+</html>
